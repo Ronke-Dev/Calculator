@@ -10,6 +10,13 @@ const equalBtn = document.querySelector(".btn-equals");
 
 
 //lets make the buttons able to listen to clicks and produce a result
+clearBtn.addEventListener("click", function(){
+    alert ("clear the values")
+});
+
+deleteBtn.addEventListener("click", function(){
+    alert ("delete the recently entered value")
+});
 
 // when you use querySelectorAll,you cant apply an event listener directly, because it wouldn't work. 
 //Javascript doesn’t return DOM elements as a simple array — it returns them as a NodeList
@@ -19,64 +26,60 @@ const equalBtn = document.querySelector(".btn-equals");
 numberBtn.forEach(function(numbersButton){
     numbersButton.addEventListener('click',function(){
         let numberBtnValues = numbersButton.getAttribute("data-num")
-        display.textContent += numberBtnValues                   //let the values appear in the display box
-       
+        alert(numberBtnValues); 
     })
 });
 
 
 operatorBtn.forEach(function(operatorButton){
     operatorButton.addEventListener("click",function(){
-        let operatorBtnShow =operatorButton.getAttribute("data-sign");
-        display.textContent += operatorBtnShow
-    
+        alert("we are operators")
     })
 });
 
 
 pointBtn.addEventListener("click",function(){
-    let pointShow = pointBtn.getAttribute("data-point");
-    display.textContent += pointShow
-    
+    alert("a point")
 });
 
 
+display.addEventListener("click",function(){
+    alert("the space")
+});
 
 equalBtn.addEventListener("click",function(){
-    let equalShow = equalBtn.getAttribute("data-equal");
-    display.textContent += equalShow
+    alert("equal sign")
 });
 
 
-//when i hit clear, i want everything on my computer clear
-clearBtn.addEventListener("click", function(){
-   let displayE = ""
-    display.textContent = display
+// UPDATE THE STEPS BY ADDING DATA ATTRIBUTES
+numberBtn.forEach(function(numbersButton){
+    numbersButton.addEventListener('click',function(){
+        let numberBtnValues = numbersButton.getAttribute("data-num")
+        alert(numberBtnValues); 
+    })
 });
 
-deleteBtn.addEventListener("click", function(){
-    alert ("delete the recently entered value")
+
+operatorBtn.forEach(function(operatorButton){
+    operatorButton.addEventListener("click",function(){
+        let operatorBtnShow =operatorButton.getAttribute("data-sign")
+        alert(operatorBtnShow);
+    })
 });
 
 
-// LETS MAKE THE OPERATORS AND BUTTONS PRODUCE A RESULT
+pointBtn.addEventListener("click",function(){
+    let pointShow = pointBtn.getAttribute("data-point")
+    alert(pointShow)
+});
 
-// add
-function add(){
-    let result = numberBtnValues + numberBtnValue
-    };
-    
-    // subtract
-    function subtract (a,b){
-    return a - b
-    };
-    
-    // multiply
-    function multiply (a,b){
-        return a * b
-    };
-    
-    // divide 
-    function divide (a,b){
-        return a / b
-    };
+
+display.addEventListener("click",function(){
+    alert("the space")
+});
+
+equalBtn.addEventListener("click",function(){
+    let equalShow = equalBtn.getAttribute("data-equal")
+    alert(equalShow)
+});

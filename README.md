@@ -25,3 +25,39 @@ Pressing “clear” should wipe out any existing data.. make sure the user is r
 Display a snarky error message if the user tries to divide by 0… and don’t let it crash your calculator!
 
 https://www.theodinproject.com/lessons/foundations-calculator
+
+New concept learnt 
+
+1) data-num in the html explained 
+
+the data attribute  (https://www.w3schools.com/tags/att_data-.asp)
+
+The data-* attribute is used to store custom data private to the page or application.
+
+The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.
+
+The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience (without any Ajax calls or server-side database queries).
+
+The data-* attribute consist of two parts:
+
+The attribute name should not contain any uppercase letters, and must be at least one character long after the prefix "data-"
+The attribute value can be any string
+
+dom manipulation - When we want to get attributes from DOM elements, we can use the getAttribute(name)
+
+2) using the forEach to loop through event listeners (https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/)
+
+In other words, how to call addEventListener() on multiple elements at the same time?
+You can do this in 2 ways. One is using a loop, the other is using event bubbling.
+Using a loop
+The loop is the simplest one conceptually.
+You can call querySelectorAll() on all elements with a specific class, then use forEach() to iterate on them:
+
+3) Arrow functions explained better  (https://www.folkstalk.com/tech/foreach-function-into-arrow-with-addeventlistener-with-code-examples/)
+
+
+
+
+Script js
+
+https://javascript.plainenglish.io/add-event-listener-to-multiple-elements-in-javascript-e9ff28411992

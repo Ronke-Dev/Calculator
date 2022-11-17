@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body> </body>
+
+
+<div id = container>
+
+    <div class ="display"></div>
+
+   
+    <div class="control-BTN">
+            <button class="btn-clear">CLEAR</button>
+            <button class="btn-delete">DELETE</button>
+    </div>
+
+  
+    <div class="BTN-container">  <!--  buttons start here-->
+
+   
+    <button class="number" data-num="7">7</button>
+    <button class="number" data-num="8">8</button>
+    <button class="number" data-num="9">9</button>
+    <button class = "btn-operator"  onclick="divide()" data-sign="/">÷</button>
+
+    <button class="number" data-num="4">4</button>
+    <button class="number" data-num="5">5</button>
+    <button class="number" data-num="6">6</button>
+    <button class = "btn-operator" onclick="multiply()" data-sign="*">x</button>
+ 
+    <button class="number" data-num="1">1</button>
+    <button class="number" data-num="2">2</button>
+    <button class="number" data-num="3">3</button>
+    <button class = "btn-operator" onclick="subtract()" data-sign="-">-</button>
+  
+    <button class="point" data-point=".">.</button>
+    <button class="number" data-num="0">0</button>
+    <button class = "btn-equals" data-equal="=">=</button>
+    <button class = "btn-operator" onclick="add()" data-sign="+">+</button>
+ 
+
+  
+    </div>  <!-- the button div ends here -->
+
+    
+
+</div>
+
+
+<div class="copyright">Built by <a href="https://github.com/Ronke-Dev">RonkeDev</a> | <a href="https://github.com/Ronke-Dev/Calculator">Source Code</a></div> 
+<!-- source code will be the link to the repo -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

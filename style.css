@@ -1,0 +1,79 @@
+/* border-color: antiquewhite; palevioletred container*/
+/* border-color: black; display */
+
+body{
+    background: pink; 
+
+}
+
+#container{
+    background-color: rgb(171, 121, 128);
+    width: max-content; /*this reduced the containers size, so we have only the space required for the calculator;*/
+    margin: auto; /*this brought the calculator to the middle*/
+    margin-top: 200px;
+    border-style: inset;
+    border-color: antiquewhite;
+    border-radius: 13px;;
+    border-width: 10px;
+    
+}
+
+.display{
+    background-color: bisque;
+    border: 10px;
+    border-color: black papayawhip;
+    border-style: inset;
+    height: 60px;
+    display: flex;  /*control the position of the content in the display */
+    justify-content: flex-end; /* moved the content to the end of the sme row */
+    font-size: 20px;
+    align-items: flex-end;/* moved the content to the bottom end,bottom row */
+   
+}
+
+
+.control-BTN{
+    margin-top: 5px;
+    max-width: 800px;
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+
+.BTN-container{
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+button{
+    flex: 1 20%;  /*flex-grow: 1 and flex-basis: 25%*/
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: w
+    
+   
+}
+
+
+
+
+
+
+
+/* 
+.c 
+
+/*  note on the flex wrap on row 40 
+ This means "each item (i.e button) should take up 25% of the space available, and the item itself should grow to fill said space".
+ Let's do some maths to explain further. Remember, our container has a max-width of 400px. We've told the container any overflowing items 
+ should break onto the next line by using flex-wrap: wrap.
+
+This means we have 400px of space per row before a line break happens. Since we've said that each button should take up 25% of the space available, 
+each button should have a width of 100px (since 25% of 400px is 100px) giving us 4 buttons per row. By inspecting the dev tools, 
+we can see this is true:*/
+
+/*  useful link https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
